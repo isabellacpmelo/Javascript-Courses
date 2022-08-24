@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <input onkeydown="dispararEvento()" type="text">
+    <!-- dispara o evento ao clique de qualquer tecla e depois aparece o caractere digitado -->
+
+    <input onkeyup="dispararEvento()" type="text">
+    <!-- Primeiro aparece o caractere digitado e depois dispara o evento -->
+
+    <input onkeypress="dispararEvento()" type="text">
+    <!-- Parecido com o onkeypress, porem só funciona com teclas que representam um caractere -->
+    
+    <script>
+        function dispararEvento() {
+            alert('Evento disparado!')
+        }
+    </script>
+</body>
+</html>
