@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    
+    <div 
+    onclick="acao()" 
+    style="background: #ccc; height: 150px; width: 150px; margin: 50px;"
+    >
+    onclick()
+    <!-- Evento é disparado quando acontece um clique -->
+    </div>
+
+    <div 
+    ondblclick="acao()" 
+    style="background: #ccc; height: 150px; width: 150px; margin: 50px;"
+    >
+    ondblclick()
+    <!-- Evento é disparado quando acontecem dois cliques -->
+    </div>
+
+    <div 
+    onmouseup="acao()" 
+    style="background: #ccc; height: 150px; width: 150px; margin: 50px;"
+    >
+    onmouseup()
+    <!-- Evento é disparado quando se solta o clique -->
+    </div>
+
+    <div 
+    onmouseover="acao()" 
+    style="background: #ccc; height: 150px; width: 150px; margin: 50px;"
+    >
+    onmouseover()
+    <!-- Evento é disparado quando o mouse passa por cima da região -->
+    </div>
+
+    <div 
+    onmouseout="acao()" 
+    style="background: #ccc; height: 150px; width: 150px; margin: 50px;"
+    >
+    onmouseout()
+    <!-- Evento é disparado quando o mouse sai de cima da região -->
+    </div>
+
+    <div 
+    onmouseout="clique()" 
+    onmouseover="entrar()"
+    style="background: rgb(46, 27, 155); height: 150px; width: 150px; margin: 50px;"
+    >
+    onmouseout()
+    <!-- Evento é disparado quando o mouse sai de cima da região -->
+    </div>
+
+
+    <script>
+        function acao() {
+            alert('Evento disparado!')
+        }
+
+        function clique() {
+            alert('Clicou!')
+        }
+
+        function entrar() {
+            alert('Entrou!')
+        }
+    </script>
+</body>
+</html>
